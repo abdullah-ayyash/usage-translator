@@ -1,5 +1,7 @@
 # Usage Translator
 
+![Python CI](https://github.com/abdullah-ayyash/usage-translator/actions/workflows/python-tests.yml/badge.svg)
+
 This script processes account usage data for billing purposes. It reads a usage CSV and a JSON part number map, applies transformation rules, and generates two SQL `INSERT` statements (for `chargeable` and `domains` tables) saved to `output.sql`.
 
 ## ✅ Features
