@@ -2,6 +2,9 @@ import json
 import csv
 
 def load_typemap(path):
+    """
+    Load the JSON typemap file that maps PartNumber to product value.
+    """
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -10,6 +13,9 @@ def load_typemap(path):
         return {}
 
 def load_csv_data(path):
+    """
+    Load CSV usage report and return list of rows as dictionaries.
+    """
     rows = []
     try:
         with open(path, newline='', encoding="utf-8") as csvfile:
