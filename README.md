@@ -25,6 +25,10 @@ usage-translator/
 │   ├── parser.py
 │   ├── transformer.py
 │   └── sql_writer.py
+├── tests/
+│ ├── init.py
+│ ├── test_sql_writer.py
+│ └── test_transformer.py
 ├── .env
 ├── .gitignore
 ├── requirements.txt
@@ -108,6 +112,18 @@ INSERT INTO chargeable (partnerID, product, partnerPurchasedPlanID, plan, usage)
 -- Domains Table Insert
 INSERT INTO domains (partnerPurchasedPlanID, domain) VALUES
 ('ABCD1234XYZ', 'example.com');
+```
+
+## 🧪 Running Tests
+
+This project uses `pytest` for unit testing. All test files are located in the `tests/` folder.
+
+### ✅ Run all tests
+
+Make sure your virtual environment is activated, then run:
+
+```bash
+pytest
 ```
 
 ## 🔐 SQL Safety
