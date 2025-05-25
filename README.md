@@ -28,9 +28,9 @@ usage-translator/
 │   ├── transformer.py
 │   └── sql_writer.py
 ├── tests/
-│ ├── init.py
-│ ├── test_sql_writer.py
-│ └── test_transformer.py
+│   ├── __init__.py
+│   ├── test_sql_writer.py
+│   └── test_transformer.py
 ├── .env
 ├── .gitignore
 ├── requirements.txt
@@ -127,6 +127,8 @@ Make sure your virtual environment is activated, then run:
 ```bash
 pytest
 ```
+
+> ✅ Tests are automatically run on each push via GitHub Actions CI.
 
 ## 🔐 SQL Safety
 
