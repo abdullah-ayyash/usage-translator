@@ -67,20 +67,49 @@ UNIT_FACTORS={"EA000001GB0O":1000,"PMQ00005GB0R":5000,"SSX006NR":1000,"SPQ00001M
 
 3. **Create a virtual environment**
 
-   ```bash
-   python -m venv .venv
-   ```
+### 🪟 Windows
+
+```bash
+python -m venv .venv
+```
+
+### 🐧 WSL / Linux
+
+If you're using WSL or Linux and creating a virtual environment fails, you may need to install the `venv` module first:
+
+```bash
+sudo apt update
+sudo apt install python3-venv
+```
+
+Then create the environment:
+
+```bash
+python3 -m venv .venv
+```
+
+> 💡 Tip: Use `python3 --version` to check your installed version. If needed, install the matching `python3.x-venv` package (e.g., `python3.10-venv`).
 
 4. **Activate the virtual environment**
 
-   - On PowerShell:
-     ```bash
-     .venv\Scripts\Activate.ps1
-     ```
-   - On Command Prompt:
-     ```bash
-     .venv\Scripts\activate.bat
-     ```
+### 🪟 Windows
+
+- **On PowerShell**
+
+  ```bash
+  .venv\Scripts\Activate.ps1
+  ```
+
+- **On Command Prompt**
+  ```bash
+  .venv\Scripts\activate.bat
+  ```
+
+### 🐧 WSL / Linux
+
+```bash
+source .venv/bin/activate
+```
 
 5. **Install required packages**
    ```bash
